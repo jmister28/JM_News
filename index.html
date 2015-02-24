@@ -1,9 +1,14 @@
 <head>
   <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
-  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
 </head>
 <body>
-  <script id= "Firebase">
-    
+  <p id= "paragraph"></p>
+ <script id= "firebase">
+   var jmnews = new Firebase ('jm-news.firebaseIO.com');
+   jmnews.on('child_added', function(snapshot) {
+  //We'll fill this in later.
+     document.getElementById("paragraph") = snapshot.val();)
+    });
   </script>
 </body>
