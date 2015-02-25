@@ -1,2 +1,5 @@
-# JM_News
-` Do you know how to make this terminal like stuff`
+# # JM_News
+JM news is about the latest news that is about random news, like a train crashing
+
+# API
+`jmister28.github.io/JM_News/API.js`
