@@ -9,9 +9,8 @@
    var jmnews = new Firebase ('jm-news.firebaseIO.com');
    jmnews.on('child_added', function(snapshot) {
   //We'll fill this in later.
-  var news = snapshot.val();
-  var json_decoded_news = JSON.parse(news);
-     console.log(json_decoded_news.name + ": " + json_decoded_news.value);
+  var news = '{"Name":' + snapshot.val(-JiyNMHWU0PsefMluWZE/Name) ', "Value":' + snapshot.val(-JiyNMHWU0PsefMluWZE/Value) + '}'  var json_decoded_news = JSON.parse(news);
+     console.log(json_decoded_news.Name + ": " + json_decoded_news.Value);
     });
   </script>
   <h1><a href= "add_your_own_news.html">ADD YOUR NEWS</a></h1>
